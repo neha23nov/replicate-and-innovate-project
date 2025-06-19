@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Battle Project</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <meta name="description" content="Frontend Battle Hackathon Entry - Clean, responsive, and animated">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #007bff;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <video autoplay muted loop id="loader-video" playsinline preload="auto">
+      <source src="assets/videos/loader.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">FrontendHack</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#customers">Customers</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#showcase">Showcase</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="video-section">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="assets/videos/homepage.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay" data-aos="fade-down">
+      <h1>Powerful. Secure. Striking.</h1>
+      <p>Technology That Works Magic</p>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+  <section class="section">
+    <div class="container" data-aos="fade-up">
+      <h2>Interactive Carousel</h2>
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="assets/videos/caraousel switch.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container" data-aos="zoom-in">
+      <h2>Our Features</h2>
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="assets/videos/features-services.mp4" type="video/mp4" />
+      </video>
+      <img src="assets/images/cards.png" alt="Feature Cards" class="image-block" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Graph -->
+  <section class="section">
+    <div class="container" data-aos="fade-right">
+      <h2>Performance Graph</h2>
+      <img src="assets/images/graph.png" alt="Performance Graph" class="image-block" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section id="stats" class="section light">
+    <div class="container" data-aos="fade-up">
+      <h2>Numbers That Matter</h2>
+      <div class="counter-container">
+        <div class="counter" data-target="1500">0</div>
+        <p>Users</p>
+      </div>
+      <div class="counter-container">
+        <div class="counter" data-target="300">0</div>
+        <p>Projects</p>
+      </div>
+      <img src="assets/images/stats.png" alt="Project Stats" class="image-block" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Customers -->
+  <section id="customers" class="section">
+    <div class="container" data-aos="flip-left">
+      <h2>Our Customers</h2>
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="assets/videos/customer-section.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="container" data-aos="zoom-in-up">
+      <h2>What They Say</h2>
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="assets/videos/testimonials.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <!-- Showcase Work -->
+  <section id="showcase" class="section">
+    <div class="container" data-aos="fade-up">
+      <h2>Showcase Work</h2>
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="assets/videos/showcase work.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="assets/videos/striking - any simple object can be used.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <!-- Effects -->
+  <section class="section">
+    <div class="container" data-aos="zoom-in">
+      <h2>Scroll & Pop Up</h2>
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="assets/videos/scroll and pop up.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" data-aos="fade-left">
+      <h2>Ripple Effects</h2>
+      <button class="ripple-btn" aria-label="Demo Ripple Button">Click Me</button>
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="assets/videos/ripple effect.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" data-aos="fade-up">
+      <h2>Parallax Animation</h2>
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="assets/videos/parallax animation.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 FrontendHack | Built for Frontend Battle 2.0</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
